@@ -49,6 +49,7 @@ const Heading = styled.span<{ subtitle?: boolean }>`
   word-break: keep-all;
   font-weight: ${({ subtitle }) => (subtitle ? 500 : 600)};
   line-height: 1.4;
+  letter-spacing: -0.025em;
   color: ${({ color, subtitle }) =>
     color || (subtitle ? "#999999" : "#333333")};
 `;
