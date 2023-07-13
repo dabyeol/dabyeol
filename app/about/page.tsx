@@ -1,6 +1,6 @@
 "use client";
 
-import { H2 } from "@/lib/client/style";
+import { Description } from "@/lib/client/style";
 import styled from "@emotion/styled";
 
 const Banner = styled.header`
@@ -20,7 +20,7 @@ const Banner = styled.header`
 export default function About() {
   return (
     <Banner>
-      <H2 subtitle>준비중입니다.</H2>
+      <Description as="h2">준비중입니다.</Description>
     </Banner>
   );
 }

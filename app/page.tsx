@@ -1,7 +1,7 @@
 "use client";
 
 import ImageCard from "@/components/image-card";
-import { Grid, H2, H3, Section, Wrapper } from "@/lib/client/style";
+import { Grid, Section, Wrapper } from "@/lib/client/style";
 import styled from "@emotion/styled";
 
 const Banner = styled.header`
@@ -13,6 +13,7 @@ const Banner = styled.header`
   align-items: center;
   padding: 24px;
   background-color: #111111;
+  color: #ffffff;
 
   @media (max-width: 809px) {
     height: 320px;
@@ -23,11 +24,11 @@ export default function Home() {
   return (
     <>
       <Banner>
-        <H2 color="#ffffff">작지만 도움되는 것들을 만듭니다.</H2>
+        <h2>작지만 도움되는 것들을 만듭니다.</h2>
       </Banner>
       <Wrapper>
         <Section>
-          <H3>서비스</H3>
+          <h3>서비스</h3>
           <Grid>
             <ImageCard
               src="/images/whatsubs.png"

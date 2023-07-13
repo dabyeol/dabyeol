@@ -44,71 +44,10 @@ export const Grid = styled.div`
   }
 `;
 
-const Heading = styled.span<{ subtitle?: boolean }>`
-  margin: 0;
-  word-break: keep-all;
-  font-weight: ${({ subtitle }) => (subtitle ? 500 : 600)};
-  line-height: 1.4;
-  letter-spacing: -0.025em;
-  color: ${({ color, subtitle }) =>
-    color || (subtitle ? "#999999" : "#333333")};
+export const Description = styled.span`
+  font-weight: 500;
+  color: #999999;
 `;
-
-export const H1 = styled(Heading)`
-  font-size: 3rem; // 48px
-
-  @media (max-width: 1199px) {
-    font-size: 2.5rem; // 40px
-  }
-
-  @media (max-width: 809px) {
-    font-size: 2rem; // 32px
-  }
-`.withComponent("h1");
-
-export const H2 = styled(Heading)`
-  font-size: 2.5rem; // 40px
-
-  @media (max-width: 1199px) {
-    font-size: 2rem; // 32px
-  }
-
-  @media (max-width: 809px) {
-    font-size: 1.75rem; // 28px
-  }
-`.withComponent("h2");
-
-export const H3 = styled(Heading)`
-  font-size: 2rem; // 32px
-
-  @media (max-width: 1199px) {
-    font-size: 1.75rem; // 28px
-  }
-
-  @media (max-width: 809px) {
-    font-size: 1.5rem; // 24px
-  }
-`.withComponent("h3");
-
-export const H4 = styled(Heading)`
-  font-size: 1.5rem; // 24px
-
-  @media (max-width: 809px) {
-    font-size: 1.25rem; // 20px
-  }
-`.withComponent("h4");
-
-export const H5 = styled(Heading)`
-  font-size: 1.25rem; // 20px
-
-  @media (max-width: 809px) {
-    font-size: 1.125rem; // 18px
-  }
-`.withComponent("h5");
-
-export const H6 = styled(Heading)`
-  font-size: 1rem; // 16px
-`.withComponent("h6");
 
 export const Caption = styled.p`
   font-size: 0.875rem; // 14px

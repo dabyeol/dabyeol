@@ -1,6 +1,6 @@
 "use client";
 
-import { H4, H5 } from "@/lib/client/style";
+import { Description } from "@/lib/client/style";
 import styled from "@emotion/styled";
 import Image from "next/image";
 import Link from "next/link";
@@ -39,6 +39,8 @@ const Frame = styled.div`
   }
 `;
 
+const Title = styled.h4;
+
 const Text = styled.div`
   display: flex;
   flex-direction: column;
@@ -65,8 +67,8 @@ export default function ImageCard({
         <Image src={src} fill alt={title} />
       </Frame>
       <Text>
-        <H4>{title}</H4>
-        <H5 subtitle>{description}</H5>
+        <h4>{title}</h4>
+        <Description as="h5">{description}</Description>
       </Text>
     </Wrapper>
   );
