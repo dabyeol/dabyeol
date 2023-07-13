@@ -39,8 +39,6 @@ const Frame = styled.div`
   }
 `;
 
-const Title = styled.h4;
-
 const Text = styled.div`
   display: flex;
   flex-direction: column;
